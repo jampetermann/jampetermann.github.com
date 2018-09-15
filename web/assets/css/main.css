@@ -1,0 +1,208 @@
+/*Paleta de colores
+0949B2 Oscuro
+3380FF
+1A70FF base
+B27800
+FFB41A Claros
+/*/
+
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.content {
+    /*max-width: 960px; /*sacado para responsividad en cel*/
+    /*max-height: 600px; /*sacado para responsividad en cel*/
+    /*width: 100%; /*sacado para responsividad en cel*/
+    /*height:100%;*/ /*sacado para responsividad en cel*/
+    height: 80vh; /*usado para responsividad en cel*/
+    width: 70vw;  /*usado para responsividad en cel*/
+    background-color:  rgba(250, 189, 96, 0.897);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16) , 0 3px 6px rgba(0,0,0,0.23);
+    position: relative;
+    padding: 1.5em; /*cambiado de 1.5em a 0.5 em para la responsividad*/
+    border-radius: 10px;
+    overflow: scroll;
+}
+.container {
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+ );  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.table {
+    width: 100%;
+    border-spacing: 0; 
+}
+.table td, 
+.table th {
+  padding: 1em;
+  text-align: center; /*cambiado de left a center para resonsividad*/  
+}
+.table tr:nth-child(even) {
+    background-color: #4cbef3;
+}
+
+td:nth-of-type(1) /*creado y usado para la responsividad*/
+{
+font-size: 1.5em;
+color: rgb(255, 255, 255);
+}
+
+th /*creado y usado para la responsividad */
+{
+display: none;
+}
+
+td /*creado y usado para la responsividad */
+{
+    display: block;
+    
+}
+
+.fa-star{
+  color: yellow;
+}
+.inline {
+   /*display: inline-block; sacado para la responsividad 
+   margin-left: 40px;
+   background-size: cover;
+   width: 600px; 
+   margin-left: auto;
+   margin-right: auto;*/
+}
+.position {
+  background-color: #b1c3f9;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 10px; /*cambiado de 400px a 10px para la responsividad*/
+}
+/*.actions {   Sacado para la responsividad
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+*/
+
+.actions {   
+    position: sticky;
+    top: 1em;
+    left: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+.close {  
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #3f2b96;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16) , 0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+   text-decoration: none;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+.title-item{
+   font-size: 0.8em; /*agregado para la responsividad*/
+   text-transform: uppercase;    
+}
+
+.title-manga {
+    font-size: -10px;
+}
+
+/*.inline {               Sacado para la responsividad
+     margin-left: 320px; 
+}*/
+
+
+img /*creado y usado para la responsividad*/
+{
+    width: 70vw;
+}
+
+/*PseudoClases
+elemento:pseudoclase
+:hover | :visited | :active | :focus
+
+*/
+
+i:hover{
+    color: #3a7bd5;
+}
+
+a:visited{
+   color: deeppink; 
+}
+
+a:focus{
+    background-color: yellow;
+}
+p{
+    display: flex;
+}
+
+/* Diseño responsivo */
+/* Unidades de medida 
+Medidas fijas
+Pixeles Px , Centimetros (cm), milimetros (mm), picas (pc), puntos(pt)
+
+Medidas relativas
+
+Porcentajes (%), em, ex, rem , vw (1%), vh (1%)
+,
+Movile - First
+
+
+/* @media (breakpoint) {propiedades}*/
+
+@media(min-width:720px){
+ th{
+    display: table-cell; 
+ }
+ td {
+     display: table-cell;
+ }
+
+td:nth-of-type(1) {
+font-size: 1em;
+color: rgb(255, 255, 255);}
+
+.content {
+    width: 80vw;
+    height: 80vh;
+}
+
+img {
+    width: 35vw;
+    margin-left: 350px;
+    margin-top: 40px;
+}
+
+.title-item {
+    margin-left: 540px;
+}
+}
